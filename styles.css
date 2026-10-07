@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "hero"
+    "offerings"
+    "options"
+    "methodology"
+    "reviews"
+    "prefoot"
+    "footer";
+}
+
+nav,
+header,
+main,
+.flex,
+.how,
+.client,
+.prefoot,
+footer {
+  border: 1px solid black;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 200px;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 200px;
+}
+
+nav ul li {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.logo {
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+}
+
+.get-quote {
+  height: 30px;
+  border-radius: 15%;
+  background-color: lightblue;
+}
+
+header {
+  grid-area: hero;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+  background-image: url("./resources/martin-bennie.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: auto;
+}
+
+header div {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+main {
+  grid-area: offerings;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.flex {
+  grid-area: options;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.flex .flex-head {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.option {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.how {
+  grid-area: methodology;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.how .how-it-works {
+  width: 400px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.works {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.client {
+  grid-area: reviews;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 100px;
+}
+
+.info {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.prefoot {
+  grid-area: prefoot;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  grid-area: footer;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-item {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
