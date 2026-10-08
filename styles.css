@@ -1,7 +1,13 @@
+:root {
+  --accent-color: #6980db;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 body {
@@ -18,10 +24,6 @@ body {
     "footer";
 }
 
-nav,
-header,
-main,
-.flex,
 .how,
 .client,
 .prefoot,
@@ -29,12 +31,16 @@ footer {
   border: 1px solid black;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   grid-area: nav;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 200px;
+  padding: 20px 100px;
 }
 
 nav ul {
@@ -44,7 +50,15 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  padding-left: 30px;
+  padding: 10px 20px;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+nav ul li a {
+  color: black;
 }
 
 .logo {
@@ -54,41 +68,92 @@ nav ul li {
 }
 
 .get-quote {
-  height: 30px;
-  border-radius: 15%;
-  background-color: lightblue;
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 header {
   grid-area: hero;
   height: 400px;
   display: flex;
-  align-items: center;
   padding: 0px 100px;
+  align-items: center;
   background-image: url("./resources/martin-bennie.jpg");
   background-repeat: none;
   background-position: center;
   background-size: auto;
+  color: white;
 }
 
 header div {
   width: 400px;
   height: 300px;
-  border: 1px solid black;
 }
 
+header div .sub-head-head {
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+header div h1 {
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+header button {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+header a {
+  color: white;
+  padding: 10px 0px;
+  border-bottom: 2px solid white;
+  margin-left: 30px;
+}
+
+header h1 span {
+  color: var(--accent-color);
+}
+
+.header-description {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
 main {
   grid-area: offerings;
   min-height: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 50px 100px;
+  padding: 0px 100px;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  gap: 20px;
+}
+
+i {
+  color: var(--accent-color);
+  font-size: 50px;
+}
+
+.box .image-description p {
+  font-weight: 300;
+  text-align: center;
 }
 
 .flex {
@@ -98,18 +163,104 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
+  background-color: #f7f7f7;
+}
+
+.flex .flex-head .flex-head-sub-head {
+  color: var(--accent-color);
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  padding-bottom: 15px;
 }
 
 .flex .flex-head {
   width: 400px;
-  height: 300px;
-  border: 1px solid black;
+}
+
+.flex .flex-head h2 {
+  padding-bottom: 15px;
+}
+
+.flex .flex-head .flex-head-description {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.flex .flex-head button {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
 }
 
 .option {
-  width: 100px;
-  height: 100px;
+  width: 280px;
+  height: 350px;
+  border: 1px solid var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.option .option-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightskyblue;
   border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option .option-description p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.option .option-price p {
+  font-weight: 300;
+}
+
+.option .option-price span {
+  font-size: 25px;
+}
+
+.option .option-list ul li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.option .option-list ul li::before {
+  font-family: "tabler-icons";
+  content: "\ea67";
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.option .option-circle i {
+  font-size: 30px;
+}
+
+.option button {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
+  margin-top: auto;
+}
+
+.option button:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
 }
 
 .how {
@@ -139,6 +290,8 @@ main {
   display: flex;
   justify-content: space-evenly;
   padding: 50px 100px;
+
+  background-color: #f7f7f7;
 }
 
 .info {

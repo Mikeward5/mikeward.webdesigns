@@ -5,51 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MikeWard WebDesigns</title>
     <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    />
   </head>
   <body>
     <nav>
       <div class="logo"></div>
       <ul>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
+        <li><a href="./index.html" class="current">Home</a></li>
+        <li><a href="./index.html">Services</a></li>
+        <li><a href="./index.html">Packages</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./index.html">Portfolio</a></li>
+        <li><a href="./index.html">Contact</a></li>
       </ul>
       <button class="get-quote">Get a quote</button>
     </nav>
     <header>
       <div>
-        <p>Websites that work for your business</p>
-        <h1>Professional websites designed around you</h1>
-        <p>
+        <p class="sub-head-head">WEBSITES THAT WORK FOR YOUR BUSINESS</p>
+        <h1>Professional websites designed around <span>you</span></h1>
+        <p class="header-description">
           I'm Mike, a freelance web designer and developer based in the North
           West Highlands. I create modern, fast and accessible websites that
           help small businesses look professional, get found and turn visitors
           into customers.
         </p>
-        <button class="free-quotation">Free quotation</button>
+        <button class="free-quotation">Get a Free Consultation</button>
         <a href="./porfolio" target="_blank">View My Work</a>
       </div>
     </header>
 
     <main>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box">
+        <i class="ti ti-devices-2"></i>
+
+        <div class="image-head">
+          <p>Responsive Design</p>
+        </div>
+        <div class="image-description">
+          <p>Looks great on any device</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="ti ti-search"></i>
+        <div class="image-head">
+          <p>SEO Friendly</p>
+        </div>
+        <div class="image-description">
+          <p>Help your business get found</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="ti ti-accessible"></i>
+        <div class="image-head">
+          <p>Accessible</p>
+        </div>
+        <div class="image-description">
+          <p>Inclusive by design</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="ti ti-dashboard"></i>
+        <div class="image-head">
+          <p>Fast & Secure</p>
+        </div>
+        <div class="image-description">
+          <p>Built for performance and peace of mind</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="ti ti-heart"></i>
+        <div class="image-head">
+          <p>Friendly Support</p>
+        </div>
+        <div class="image-description">
+          <p>Here when you need me</p>
+        </div>
+      </div>
     </main>
     <section class="flex">
       <div class="flex-head">
-        <p>Website Packages</p>
+        <p class="flex-head-sub-head">WEBSITE PACKAGES</p>
         <h2>Flexible options for every stage of your business</h2>
+        <p class="flex-head-description">
+          Every business is different, so i offer three clear packages to suit
+          your needs and budget. Whether you need a simple online presence or a
+          fully bespoke solution. I'll help you find the right fit.
+        </p>
         <button class="compare">Compare Packages</button>
       </div>
-      <div class="option"></div>
-      <div class="option"></div>
-      <div class="option"></div>
+      <div class="option">
+        <div class="option-circle">
+          <i class="ti ti-files"></i>
+        </div>
+        <div class="option-head">
+          <h2>Pre-made</h2>
+        </div>
+        <div class="option-description">
+          <p>Quick, affordable and effective</p>
+        </div>
+        <div class="option-price">
+          <p>from <span>£600</span></p>
+        </div>
+        <div class="option-list">
+          <ul>
+            <li>Customisable existing design</li>
+            <li>Up to 5 pages</li>
+            <li>Responsive layout</li>
+            <li>Basic SEO & performance</li>
+            <li>3 months bug fixing</li>
+          </ul>
+        </div>
+        <button class="option-get-started">Get Started</button>
+      </div>
+      <div class="option">
+        <div class="option-circle">
+          <i class="ti ti-file-certificate"></i>
+        </div>
+        <div class="option-head">
+          <h2>Professional</h2>
+        </div>
+        <div class="option-description">
+          <p>A unique design for your business</p>
+        </div>
+        <div class="option-price">
+          <p>from <span>£1,200</span></p>
+        </div>
+        <div class="option-list">
+          <ul>
+            <li>Custom design (or tailored template)</li>
+            <li>Up to 8 pages</li>
+            <li>Responsive layout</li>
+            <li>Basic SEO & performance</li>
+            <li>3 months bug fixing</li>
+          </ul>
+        </div>
+        <button class="option-get-started">Get Started</button>
+      </div>
+      <div class="option">
+        <div class="option-circle">
+          <i class="ti ti-award"></i>
+        </div>
+        <div class="option-head">
+          <h2>Bespoke</h2>
+        </div>
+        <div class="option-description">
+          <p>For complex or high-growth needs</p>
+        </div>
+        <div class="option-price">
+          <p>from <span>£2500</span></p>
+        </div>
+        <div class="option-list">
+          <ul>
+            <li>Fully bespoke design & build</li>
+            <li>Advanced Functionality</li>
+            <li>Integrations & APIs</li>
+            <li>E-commerce / booking systems</li>
+            <li>3 months bug fixing</li>
+          </ul>
+        </div>
+        <button class="option-get-started">Get Started</button>
+      </div>
     </section>
     <section class="how">
       <div class="how-it-works">
