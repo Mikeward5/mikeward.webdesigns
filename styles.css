@@ -24,13 +24,6 @@ body {
     "footer";
 }
 
-.how,
-.client,
-.prefoot,
-footer {
-  border: 1px solid black;
-}
-
 a {
   text-decoration: none;
 }
@@ -74,16 +67,17 @@ nav ul li a {
   border: none;
   font-family: "Roboto";
   font-weight: 500;
+  color: white;
 }
 
 header {
   grid-area: hero;
-  height: 400px;
+  height: 500px;
   display: flex;
   padding: 0px 100px;
   align-items: center;
   background-image: url("./resources/martin-bennie.jpg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
   color: white;
@@ -174,7 +168,7 @@ i {
 }
 
 .flex .flex-head {
-  width: 400px;
+  width: 350px;
 }
 
 .flex .flex-head h2 {
@@ -273,39 +267,142 @@ i {
 }
 
 .how .how-it-works {
-  width: 400px;
-  height: 250px;
-  border: 1px solid black;
+  width: 350px;
 }
 
-.works {
-  width: 100px;
-  height: 100px;
+.how .how-it-works .how-sub-head {
+  color: var(--accent-color);
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.how .how-it-works h2 {
+  padding-bottom: 15px;
+}
+
+.how .how-it-works .how-description {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.how .how-it-works button {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
+}
+
+.how .works {
+  width: 200px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.works .works-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightskyblue;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works .works-circle i {
+  font-size: 30px;
+}
+
+.works .stage {
+  color: var(--accent-color);
+}
+
+.works .works-description p {
+  font-weight: 300;
+  font-size: 12px;
 }
 
 .client {
   grid-area: reviews;
   min-height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 50px 100px;
-
   background-color: #f7f7f7;
+}
+
+.client .clients-say {
+  width: 350px;
+}
+
+.client .clients-say p {
+  color: var(--accent-color);
+  padding-bottom: 15px;
+  font-size: 12px;
+}
+
+.client .customer-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  gap: 10px;
+}
+
+.client .customer-quote .carosel {
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.client .photo {
+  background-image: url("./resources/daniel-romero-Z4_kN9ybLf4-unsplash.jpg");
+  background-size: contain;
 }
 
 .info {
   width: 400px;
   height: 200px;
-  border: 1px solid black;
 }
 
 .prefoot {
   grid-area: prefoot;
-  min-height: 100px;
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("./resources/k-b-axa5jckDcg4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prefoot .prefoot-sub-head {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.prefoot h3 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.prefoot .prefoot-description {
+  padding-bottom: 15px;
+}
+
+.prefoot button {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
 }
 
 footer {
@@ -313,10 +410,29 @@ footer {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
+  background-color: black;
+  color: white;
 }
 
 .foot-item {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  border: 1px solid white;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+footer ul li:hover {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+footer ul li a {
+  color: white;
 }
