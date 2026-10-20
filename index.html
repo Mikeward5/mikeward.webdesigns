@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MikeWard WebDesigns</title>
-    <link href="styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,244 +14,248 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
     />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/template.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    <nav>
-      <div class="logo"></div>
-      <ul>
-        <li><a href="./index.html" class="current">Home</a></li>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="site-logo"></div>
+      <ul class="site-nav__links">
+        <li>
+          <a href="./index.html" class="current" aria-current="page">Home</a>
+        </li>
         <li><a href="./index.html">Services</a></li>
         <li><a href="./index.html">Packages</a></li>
         <li><a href="./index.html">About</a></li>
         <li><a href="./index.html">Portfolio</a></li>
         <li><a href="./index.html">Contact</a></li>
       </ul>
-      <button class="get-quote">Get a quote</button>
+      <button class="quote-button">Get a quote</button>
     </nav>
-    <header>
-      <div>
-        <p class="sub-head-head">WEBSITES THAT WORK FOR YOUR BUSINESS</p>
+
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">WEBSITES THAT WORK FOR YOUR BUSINESS</p>
         <h1>Professional websites designed around <span>you</span></h1>
-        <p class="header-description">
+        <p class="hero__description">
           I'm Mike, a freelance web designer and developer based in the North
           West Highlands. I create modern, fast and accessible websites that
           help small businesses look professional, get found and turn visitors
           into customers.
         </p>
-        <button class="free-quotation">Get a Free Consultation</button>
-        <a href="./porfolio" target="_blank">View My Work</a>
+        <button class="hero__consultation-button">
+          Get a Free Consultation
+        </button>
+        <a class="hero__portfolio-link" href="./porfolio" target="_blank"
+          >View My Work</a
+        >
       </div>
     </header>
 
-    <main>
-      <div class="box">
-        <i class="ti ti-devices-2"></i>
-
-        <div class="image-head">
-          <p>Responsive Design</p>
-        </div>
-        <div class="image-description">
+    <main class="benefits">
+      <div class="benefit-card">
+        <i class="ti ti-devices-2" aria-hidden="true"></i>
+        <div class="benefit-card__title"><p>Responsive Design</p></div>
+        <div class="benefit-card__description">
           <p>Looks great on any device</p>
         </div>
       </div>
-      <div class="box">
-        <i class="ti ti-search"></i>
-        <div class="image-head">
-          <p>SEO Friendly</p>
-        </div>
-        <div class="image-description">
+      <div class="benefit-card">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <div class="benefit-card__title"><p>SEO Friendly</p></div>
+        <div class="benefit-card__description">
           <p>Help your business get found</p>
         </div>
       </div>
-      <div class="box">
-        <i class="ti ti-accessible"></i>
-        <div class="image-head">
-          <p>Accessible</p>
-        </div>
-        <div class="image-description">
-          <p>Inclusive by design</p>
-        </div>
+      <div class="benefit-card">
+        <i class="ti ti-accessible" aria-hidden="true"></i>
+        <div class="benefit-card__title"><p>Accessible</p></div>
+        <div class="benefit-card__description"><p>Inclusive by design</p></div>
       </div>
-      <div class="box">
-        <i class="ti ti-dashboard"></i>
-        <div class="image-head">
-          <p>Fast & Secure</p>
-        </div>
-        <div class="image-description">
+      <div class="benefit-card">
+        <i class="ti ti-dashboard" aria-hidden="true"></i>
+        <div class="benefit-card__title"><p>Fast &amp; Secure</p></div>
+        <div class="benefit-card__description">
           <p>Built for performance and peace of mind</p>
         </div>
       </div>
-      <div class="box">
-        <i class="ti ti-heart"></i>
-        <div class="image-head">
-          <p>Friendly Support</p>
-        </div>
-        <div class="image-description">
+      <div class="benefit-card">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <div class="benefit-card__title"><p>Friendly Support</p></div>
+        <div class="benefit-card__description">
           <p>Here when you need me</p>
         </div>
       </div>
     </main>
-    <section class="flex">
-      <div class="flex-head">
-        <p class="flex-head-sub-head">WEBSITE PACKAGES</p>
+
+    <section class="packages-section">
+      <div class="packages-intro">
+        <p class="packages-intro__eyebrow">WEBSITE PACKAGES</p>
         <h2>Flexible options for every stage of your business</h2>
-        <p class="flex-head-description">
-          Every business is different, so i offer three clear packages to suit
+        <p class="packages-intro__description">
+          Every business is different, so I offer three clear packages to suit
           your needs and budget. Whether you need a simple online presence or a
-          fully bespoke solution. I'll help you find the right fit.
+          fully bespoke solution, I'll help you find the right fit.
         </p>
-        <button class="compare">Compare Packages</button>
+        <button class="packages-intro__compare-button">Compare Packages</button>
       </div>
-      <div class="option">
-        <div class="option-circle">
-          <i class="ti ti-files"></i>
+      <div class="package-card">
+        <div class="package-card__icon">
+          <i class="ti ti-files" aria-hidden="true"></i>
         </div>
-        <div class="option-head">
-          <h2>Pre-made</h2>
-        </div>
-        <div class="option-description">
+        <div class="package-card__heading"><h2>Pre-made</h2></div>
+        <div class="package-card__description">
           <p>Quick, affordable and effective</p>
         </div>
-        <div class="option-price">
+        <div class="package-card__price">
           <p>from <span>£600</span></p>
         </div>
-        <div class="option-list">
+        <div class="package-card__features">
           <ul>
             <li>Customisable existing design</li>
             <li>Up to 5 pages</li>
             <li>Responsive layout</li>
-            <li>Basic SEO & performance</li>
+            <li>Basic SEO &amp; performance</li>
             <li>3 months bug fixing</li>
           </ul>
         </div>
-        <button class="option-get-started">Get Started</button>
+        <button class="package-card__button">Get Started</button>
       </div>
-      <div class="option">
-        <div class="option-circle">
-          <i class="ti ti-file-certificate"></i>
+      <div class="package-card">
+        <div class="package-card__icon">
+          <i class="ti ti-file-certificate" aria-hidden="true"></i>
         </div>
-        <div class="option-head">
-          <h2>Professional</h2>
-        </div>
-        <div class="option-description">
+        <div class="package-card__heading"><h2>Professional</h2></div>
+        <div class="package-card__description">
           <p>A unique design for your business</p>
         </div>
-        <div class="option-price">
+        <div class="package-card__price">
           <p>from <span>£1,200</span></p>
         </div>
-        <div class="option-list">
+        <div class="package-card__features">
           <ul>
             <li>Custom design (or tailored template)</li>
             <li>Up to 8 pages</li>
             <li>Responsive layout</li>
-            <li>Basic SEO & performance</li>
+            <li>Basic SEO &amp; performance</li>
             <li>3 months bug fixing</li>
           </ul>
         </div>
-        <button class="option-get-started">Get Started</button>
+        <button class="package-card__button">Get Started</button>
       </div>
-      <div class="option">
-        <div class="option-circle">
-          <i class="ti ti-award"></i>
+      <div class="package-card">
+        <div class="package-card__icon">
+          <i class="ti ti-award" aria-hidden="true"></i>
         </div>
-        <div class="option-head">
-          <h2>Bespoke</h2>
-        </div>
-        <div class="option-description">
+        <div class="package-card__heading"><h2>Bespoke</h2></div>
+        <div class="package-card__description">
           <p>For complex or high-growth needs</p>
         </div>
-        <div class="option-price">
-          <p>from <span>£2500</span></p>
+        <div class="package-card__price">
+          <p>from <span>£2,500</span></p>
         </div>
-        <div class="option-list">
+        <div class="package-card__features">
           <ul>
-            <li>Fully bespoke design & build</li>
+            <li>Fully bespoke design &amp; build</li>
             <li>Advanced Functionality</li>
-            <li>Integrations & APIs</li>
+            <li>Integrations &amp; APIs</li>
             <li>E-commerce / booking systems</li>
             <li>3 months bug fixing</li>
           </ul>
         </div>
-        <button class="option-get-started">Get Started</button>
+        <button class="package-card__button">Get Started</button>
       </div>
     </section>
-    <section class="how">
-      <div class="how-it-works">
-        <p class="how-sub-head">HOW IT WORKS</p>
+
+    <section class="process-section">
+      <div class="process-intro">
+        <p class="process-intro__eyebrow">HOW IT WORKS</p>
         <h2>A simple, stress-free process from start to finish</h2>
-        <p class="how-description">
+        <p class="process-intro__description">
           I keep things clear, friendly and straightforward. You'll always know
-          what's happening and what comes next
+          what's happening and what comes next.
         </p>
-        <button class="learn-more">Learn More</button>
+        <button class="process-intro__learn-button">Learn More</button>
       </div>
-      <div class="works">
-        <div class="works-circle">
-          <i class="ti ti-brand-wechat"></i>
+      <div class="process-step">
+        <div class="process-step__icon">
+          <i class="ti ti-brand-wechat" aria-hidden="true"></i>
         </div>
-        <div class="stage"><p>01</p></div>
-        <div class="works-sub-head">
-          <p>Consultation</p>
-        </div>
-        <div class="works-description">
+        <div class="process-step__number"><p>01</p></div>
+        <div class="process-step__title"><p>Consultation</p></div>
+        <div class="process-step__description">
           <p>We discuss your goals, ideas and requirements</p>
         </div>
       </div>
-      <div class="works">
-        <div class="works-circle">
-          <i class="ti ti-file-invoice"></i>
+      <div class="process-step">
+        <div class="process-step__icon">
+          <i class="ti ti-file-invoice" aria-hidden="true"></i>
         </div>
-        <div class="stage"><p>02</p></div>
-        <div class="works-sub-head"><p>Proposal</p></div>
-        <div class="works-description">
+        <div class="process-step__number"><p>02</p></div>
+        <div class="process-step__title"><p>Proposal</p></div>
+        <div class="process-step__description">
           <p>You'll receive a detailed project proposal and schedule</p>
         </div>
       </div>
-      <div class="works">
-        <div class="works-circle">
-          <i class="ti ti-pencil-minus"></i>
+      <div class="process-step">
+        <div class="process-step__icon">
+          <i class="ti ti-pencil-minus" aria-hidden="true"></i>
         </div>
-        <div class="stage"><p>03</p></div>
-        <div class="works-sub-head"><p>Design & Development</p></div>
-        <div class="works-description">
+        <div class="process-step__number"><p>03</p></div>
+        <div class="process-step__title"><p>Design &amp; Development</p></div>
+        <div class="process-step__description">
           <p>You'll review the live staging site and share feedback</p>
         </div>
       </div>
-      <div class="works">
-        <div class="works-circle"><i class="ti ti-circle-check"></i></div>
-        <div class="stage"><p>04</p></div>
-        <div class="works-sub-head"><p>Launch</p></div>
-        <div class="works-description">
+      <div class="process-step">
+        <div class="process-step__icon">
+          <i class="ti ti-circle-check" aria-hidden="true"></i>
+        </div>
+        <div class="process-step__number"><p>04</p></div>
+        <div class="process-step__title"><p>Launch</p></div>
+        <div class="process-step__description">
           <p>After final testing and payment, your website goes live</p>
         </div>
       </div>
     </section>
-    <section class="client">
-      <div class="clients-say info">
+
+    <section class="testimonials-section">
+      <div class="testimonials-intro testimonial-panel">
         <p>WHAT CLIENTS SAY</p>
         <h2>Real businesses. Real results</h2>
       </div>
-      <div class="customer-quote info">
-        <button class="forward">
-          <i class="ti ti-arrow-big-left-line"></i>
+      <div class="testimonial-carousel testimonial-panel">
+        <button
+          class="testimonial-carousel__previous"
+          aria-label="Previous testimonial"
+        >
+          <i class="ti ti-arrow-big-left-line" aria-hidden="true"></i>
         </button>
-        <div class="carosel"></div>
-        <button class="back"><i class="ti ti-arrow-big-right-line"></i></button>
+        <div class="testimonial-carousel__content"></div>
+        <button
+          class="testimonial-carousel__next"
+          aria-label="Next testimonial"
+        >
+          <i class="ti ti-arrow-big-right-line" aria-hidden="true"></i>
+        </button>
       </div>
-      <div class="photo info"></div>
+      <div class="testimonials-photo testimonial-panel"></div>
     </section>
-    <section class="prefoot">
-      <p class="prefoot-sub-head">READY TO GET STARTED?</p>
-      <h3>Let's build something great together</h3>
-      <p class="prefoot-description">
+
+    <section class="final-cta">
+      <p class="final-cta__eyebrow">READY TO GET STARTED?</p>
+      <h2>Let's build something great together</h2>
+      <p class="final-cta__description">
         Book a free consultation and take the first step towards a website that
         works for you
       </p>
-      <button>Get a free consultation</button>
+      <button class="final-cta__button">Get a free consultation</button>
     </section>
-    <footer>
-      <div class="foot-logo foot-item"></div>
-      <ul>
+
+    <footer class="site-footer">
+      <div class="site-footer__logo"></div>
+      <ul class="site-footer__links">
         <li><a href="./index.html" class="current">Home</a></li>
         <li><a href="./index.html">Services</a></li>
         <li><a href="./index.html">Packages</a></li>
@@ -260,7 +263,7 @@
         <li><a href="./index.html">Portfolio</a></li>
         <li><a href="./index.html">Contact</a></li>
       </ul>
-      <div class="social-media foot-item"></div>
+      <div class="site-footer__social-links"></div>
     </footer>
   </body>
 </html>

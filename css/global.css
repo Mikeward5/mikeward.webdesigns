@@ -1,0 +1,20 @@
+:root {
+  --accent-color: #6980db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: var(--accent-color);
+  font-size: 50px;
+}

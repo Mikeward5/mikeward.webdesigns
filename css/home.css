@@ -1,15 +1,4 @@
-:root {
-  --accent-color: #6980db;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto";
-  font-weight: 500;
-}
-
+/* Homepage-only grid layout */
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -23,135 +12,100 @@ body {
     "prefoot"
     "footer";
 }
-
-a {
-  text-decoration: none;
-}
-
-nav {
+.site-nav {
   grid-area: nav;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
 }
-
-nav ul {
-  display: flex;
-  margin-left: 200px;
-}
-
-nav ul li {
-  list-style: none;
-  padding: 10px 20px;
-}
-
-nav ul li:hover {
-  border-bottom: 2px solid var(--accent-color);
-}
-
-nav ul li a {
-  color: black;
-}
-
-.logo {
-  border: 1px solid black;
-  width: 200px;
-  height: 50px;
-}
-
-.get-quote {
-  background-color: var(--accent-color);
-  border-radius: 20px;
-  padding: 10px 20px;
-  border: none;
-  font-family: "Roboto";
-  font-weight: 500;
-  color: white;
-}
-
-header {
+.hero {
   grid-area: hero;
+}
+.benefits {
+  grid-area: offerings;
+}
+.packages-section {
+  grid-area: options;
+}
+.process-section {
+  grid-area: methodology;
+}
+.testimonials-section {
+  grid-area: reviews;
+}
+.final-cta {
+  grid-area: prefoot;
+}
+.site-footer {
+  grid-area: footer;
+}
+
+/* Hero */
+.hero {
   height: 500px;
   display: flex;
-  padding: 0px 100px;
+  padding: 0 100px;
   align-items: center;
-  background-image: url("./resources/martin-bennie.jpg");
+  background-image: url("../resources/martin-bennie.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
   color: white;
 }
-
-header div {
+.hero__content {
   width: 400px;
   height: 300px;
 }
-
-header div .sub-head-head {
+.hero__eyebrow {
   letter-spacing: 1.5px;
   font-size: 12px;
   padding-bottom: 15px;
 }
-
-header div h1 {
+.hero__content h1 {
   font-weight: 700;
   font-size: 40px;
   padding-bottom: 15px;
 }
-
-header button {
+.hero__consultation-button {
   background-color: var(--accent-color);
   border-radius: 20px;
   color: white;
   padding: 10px 20px;
   border: none;
 }
-
-header a {
+.hero__portfolio-link {
   color: white;
-  padding: 10px 0px;
+  padding: 10px 0;
   border-bottom: 2px solid white;
   margin-left: 30px;
 }
-
-header h1 span {
+.hero__content h1 span {
   color: var(--accent-color);
 }
-
-.header-description {
+.hero__description {
   font-weight: 400;
   padding-bottom: 20px;
 }
-main {
-  grid-area: offerings;
+
+/* Service benefits */
+.benefits {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0 100px;
 }
-
-.box {
+.benefit-card {
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0px;
+  padding: 30px 0;
   gap: 20px;
 }
-
-i {
-  color: var(--accent-color);
-  font-size: 50px;
-}
-
-.box .image-description p {
+.benefit-card__description p {
   font-weight: 300;
   text-align: center;
 }
 
-.flex {
-  grid-area: options;
+/* Packages */
+.packages-section {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
@@ -159,36 +113,30 @@ i {
   padding: 50px 100px;
   background-color: #f7f7f7;
 }
-
-.flex .flex-head .flex-head-sub-head {
+.packages-intro {
+  width: 350px;
+}
+.packages-intro__eyebrow {
   color: var(--accent-color);
   letter-spacing: 1.5px;
   font-size: 12px;
   padding-bottom: 15px;
 }
-
-.flex .flex-head {
-  width: 350px;
-}
-
-.flex .flex-head h2 {
+.packages-intro h2 {
   padding-bottom: 15px;
 }
-
-.flex .flex-head .flex-head-description {
+.packages-intro__description {
   font-weight: 400;
   padding-bottom: 20px;
 }
-
-.flex .flex-head button {
+.packages-intro__compare-button {
   background-color: #f7f7f7;
   border-radius: 20px;
   color: var(--accent-color);
   padding: 10px 20px;
   border: 1px solid var(--accent-color);
 }
-
-.option {
+.package-card {
   width: 280px;
   height: 350px;
   border: 1px solid var(--accent-color);
@@ -199,50 +147,41 @@ i {
   background-color: white;
   padding: 20px;
 }
-
-.option .option-circle {
+.package-card__icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: lightskyblue;
   border: 1px solid black;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.option .option-description p {
+.package-card__description p {
   font-weight: 300;
   font-size: 12px;
 }
-
-.option .option-price p {
+.package-card__price p {
   font-weight: 300;
 }
-
-.option .option-price span {
+.package-card__price span {
   font-size: 25px;
 }
-
-.option .option-list ul li {
+.package-card__features ul li {
   list-style: none;
   font-weight: 300;
   font-size: 12px;
 }
-
-.option .option-list ul li::before {
+.package-card__features ul li::before {
   font-family: "tabler-icons";
   content: "\ea67";
   color: var(--accent-color);
   margin-right: 10px;
 }
-
-.option .option-circle i {
+.package-card__icon i {
   font-size: 30px;
 }
-
-.option button {
+.package-card__button {
   background-color: #f7f7f7;
   border-radius: 20px;
   color: var(--accent-color);
@@ -250,59 +189,51 @@ i {
   border: 1px solid var(--accent-color);
   margin-top: auto;
 }
-
-.option button:hover {
+.package-card__button:hover {
   background-color: var(--accent-color);
   color: white;
   border: none;
 }
 
-.how {
-  grid-area: methodology;
+/* How it works */
+.process-section {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
 }
-
-.how .how-it-works {
+.process-intro {
   width: 350px;
 }
-
-.how .how-it-works .how-sub-head {
+.process-intro__eyebrow {
   color: var(--accent-color);
   letter-spacing: 1.5px;
   font-size: 12px;
   padding-bottom: 15px;
 }
-
-.how .how-it-works h2 {
+.process-intro h2 {
   padding-bottom: 15px;
 }
-
-.how .how-it-works .how-description {
+.process-intro__description {
   font-weight: 400;
   padding-bottom: 20px;
 }
-
-.how .how-it-works button {
+.process-intro__learn-button {
   background-color: #f7f7f7;
   border-radius: 20px;
   color: var(--accent-color);
   padding: 10px 20px;
   border: 1px solid var(--accent-color);
 }
-
-.how .works {
+.process-step {
   width: 200px;
   height: 220px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.works .works-circle {
+.process-step__icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -312,136 +243,82 @@ i {
   justify-content: center;
   align-items: center;
 }
-
-.works .works-circle i {
+.process-step__icon i {
   font-size: 30px;
 }
-
-.works .stage {
+.process-step__number {
   color: var(--accent-color);
 }
-
-.works .works-description p {
+.process-step__description p {
   font-weight: 300;
   font-size: 12px;
 }
 
-.client {
-  grid-area: reviews;
+/* Testimonials */
+.testimonials-section {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
   padding: 50px 100px;
   background-color: #f7f7f7;
 }
-
-.client .clients-say {
+.testimonials-intro {
   width: 350px;
 }
-
-.client .clients-say p {
+.testimonials-intro p {
   color: var(--accent-color);
   padding-bottom: 15px;
   font-size: 12px;
 }
-
-.client .customer-quote {
+.testimonial-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 600px;
   gap: 10px;
 }
-
-.client .customer-quote .carosel {
+.testimonial-carousel__content {
   width: 500px;
   background-color: white;
   border-radius: 10px;
   height: 200px;
   border: 1px solid black;
 }
-
-.client .photo {
-  background-image: url("./resources/daniel-romero-Z4_kN9ybLf4-unsplash.jpg");
+.testimonials-photo {
+  background-image: url("../resources/daniel-romero-Z4_kN9ybLf4-unsplash.jpg");
   background-size: contain;
 }
-
-.info {
+.testimonial-panel {
   width: 400px;
   height: 200px;
 }
 
-.prefoot {
-  grid-area: prefoot;
+/* Final call to action */
+.final-cta {
   min-height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./resources/k-b-axa5jckDcg4-unsplash.jpg");
+  background-image: url("../resources/k-b-axa5jckDcg4-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.prefoot .prefoot-sub-head {
+.final-cta__eyebrow {
   font-size: 12px;
   padding-bottom: 5px;
 }
-
-.prefoot h3 {
+.final-cta h2 {
   font-size: 30px;
   padding-bottom: 15px;
 }
-
-.prefoot .prefoot-description {
+.final-cta__description {
   padding-bottom: 15px;
 }
-
-.prefoot button {
+.final-cta__button {
   background-color: #f7f7f7;
   border-radius: 20px;
   color: var(--accent-color);
   padding: 10px 20px;
   border: 1px solid var(--accent-color);
-}
-
-footer {
-  grid-area: footer;
-  min-height: 100px;
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  align-items: center;
-  padding: 20px 100px;
-}
-
-.social-media {
-  width: 100px;
-  height: 100px;
-  border: 1px solid white;
-}
-
-.foot-logo {
-  width: 200px;
-  height: 50px;
-  border: 1px solid white;
-}
-
-footer ul {
-  display: flex;
-  align-items: center;
-}
-
-footer ul li {
-  list-style: none;
-  padding: 10px 20px;
-}
-
-footer ul li:hover {
-  border-bottom: 2px solid var(--accent-color);
-}
-
-footer ul li a {
-  color: white;
 }
