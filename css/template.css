@@ -7,7 +7,6 @@
 }
 .site-nav__links {
   display: flex;
-  margin-left: 200px;
 }
 .site-nav__links li {
   list-style: none;
@@ -20,9 +19,8 @@
   color: black;
 }
 .site-logo {
-  border: 1px solid black;
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: auto;
 }
 .quote-button {
   background-color: var(--accent-color);
@@ -50,9 +48,8 @@
   border: 1px solid white;
 }
 .site-footer__logo {
-  width: 200px;
-  height: 50px;
-  border: 1px solid white;
+  width: 250px;
+  height: auto;
 }
 .site-footer__links {
   display: flex;

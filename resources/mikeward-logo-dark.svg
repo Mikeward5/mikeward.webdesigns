@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" role="img" aria-labelledby="title desc">
+  <title id="title">MikeWard.WebDesigns logo</title>
+  <desc id="desc">Overlapping blue and indigo MW monogram with MikeWard.WebDesigns wordmark.</desc>
+  <defs>
+    <linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7188ed"/><stop offset="1" stop-color="#3949ab"/></linearGradient>
+    <linearGradient id="w" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#3446a7"/><stop offset="1" stop-color="#92a5ff"/></linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="21">
+    <path d="M24 135 L49 42 L87 110 L124 42 L150 135" stroke="url(#m)"/>
+    <path d="M112 91 L145 136 L180 73 L211 136 L247 43" stroke="url(#w)"/>
+  </g>
+  <path d="M276 30 V150" stroke="#A5B4FC" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif" dominant-baseline="middle">
+    <text x="304" y="72" font-size="52" font-weight="700" letter-spacing="-1.8" fill="#FFFFFF">MikeWard</text>
+    <text x="306" y="123" font-size="37" font-weight="500" letter-spacing=".1" fill="#B8C5FF">.WebDesigns</text>
+  </g>
+</svg>
