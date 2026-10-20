@@ -412,16 +412,25 @@ footer {
   justify-content: space-between;
   background-color: black;
   color: white;
+  align-items: center;
+  padding: 20px 100px;
 }
 
-.foot-item {
+.social-media {
   width: 100px;
   height: 100px;
   border: 1px solid white;
 }
 
+.foot-logo {
+  width: 200px;
+  height: 50px;
+  border: 1px solid white;
+}
+
 footer ul {
   display: flex;
+  align-items: center;
 }
 
 footer ul li {
