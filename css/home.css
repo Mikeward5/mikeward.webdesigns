@@ -151,8 +151,6 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: lightskyblue;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +178,21 @@ body {
 }
 .package-card__icon i {
   font-size: 30px;
+  color: black;
 }
+
+.package-card_icon_premade {
+  background-color: var(--circle-purple);
+}
+
+.package-card_icon_professional {
+  background-color: var(--circle-green);
+}
+
+.package-card_icon_bespoke {
+  background-color: var(--circle-blue);
+}
+
 .package-card__button {
   background-color: #f7f7f7;
   border-radius: 20px;
@@ -237,14 +249,27 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: lightskyblue;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.process-step__icon_consultation {
+  background-color: var(--circle-yellow);
+}
+.process-step__icon_proposal {
+  background-color: var(--circle-green);
+}
+.process-step__icon_design {
+  background-color: var(--circle-blue);
+}
+.process-step__icon_launch {
+  background-color: var(--circle-purple);
+}
+
 .process-step__icon i {
   font-size: 30px;
+  color: black;
 }
 .process-step__number {
   color: var(--accent-color);
@@ -303,6 +328,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 20px 0px;
 }
 .final-cta__eyebrow {
   font-size: 12px;

@@ -1,5 +1,9 @@
 :root {
   --accent-color: #4056ad;
+  --circle-blue: #87cefa;
+  --circle-purple: #b39ddb;
+  --circle-green: #8eddb5;
+  --circle-yellow: #f9de8b;
 }
 
 * {
