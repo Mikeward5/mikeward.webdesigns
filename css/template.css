@@ -1,4 +1,18 @@
 /* Shared navigation */
+.announcement-bar {
+  grid-area: announcement;
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.announcement-bar p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .site-nav {
   display: flex;
   justify-content: space-between;
