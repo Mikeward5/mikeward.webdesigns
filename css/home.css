@@ -410,6 +410,8 @@ body {
   .testimonial-carousel {
     width: 100%;
     flex: none;
+    min-width: 0;
+    max-width: 100%;
     gap: 0px;
   }
 
