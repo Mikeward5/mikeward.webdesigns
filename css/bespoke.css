@@ -1,0 +1,74 @@
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "announcement"
+    "nav"
+    "hero"
+    "overview"
+    "whats-included"
+    "optionals"
+    "process"
+    "footer";
+}
+
+.hero {
+  grid-area: hero;
+  height: auto;
+  display: flex;
+  padding: 0 clamp(20px, 5vw, 100px);
+  align-items: center;
+  background-image: url("../resources/martin-bennie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  color: white;
+}
+
+.hero-information {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-information h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hero-information .eyebrow {
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+
+.hero-from {
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+#hero-span {
+  font-size: 36px;
+  color: white;
+  padding-left: 10px;
+}
+.hero-description {
+  font-weight: 400;
+}
+
+.hero-closed-business {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 12px 15px;
+  align-items: center;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero-closed-business i {
+  color: red;
+}

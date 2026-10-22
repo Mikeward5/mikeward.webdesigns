@@ -13,9 +13,7 @@ body {
     "prefoot"
     "footer";
 }
-.site-nav {
-  grid-area: nav;
-}
+
 .hero {
   grid-area: hero;
 }
@@ -33,9 +31,6 @@ body {
 }
 .final-cta {
   grid-area: prefoot;
-}
-.site-footer {
-  grid-area: footer;
 }
 
 /* Hero */
@@ -211,7 +206,9 @@ body {
   padding: 10px 20px;
   border: 1px solid var(--accent-color);
   margin-top: auto;
+  font-size: 14px;
 }
+
 .package-card__button:hover {
   background-color: var(--accent-color);
   color: white;
