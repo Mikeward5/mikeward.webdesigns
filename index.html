@@ -10,14 +10,24 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+      media="print"
+      onload="this.media = 'all'"
     />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/template.css" />
     <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="resources/martin-bennie.jpg"
+      fetchpriority="high"
+    />
     <meta
       name="description"
       content="Affordable, professional web design for small businesses in the Scottish Highlands and across the UK. Fast, modern websites tailored to your business."
@@ -294,6 +304,8 @@
         src="resources/mikeward-logo-dark.svg"
         alt="MikeWard WebDesigns logo"
         class="site-footer__logo"
+        width="700"
+        height="180"
       />
 
       <ul class="site-footer__links">
