@@ -380,6 +380,7 @@ body {
 }
 .final-cta__description {
   padding-bottom: 15px;
+  color: white;
 }
 .final-cta__button {
   background-color: #f7f7f7;
@@ -558,5 +559,22 @@ body {
 
   .hero__content {
     margin: 0 auto;
+  }
+
+  .hero__portfolio-link {
+    display: none;
+  }
+
+  .final-cta {
+    padding: 20px;
+  }
+
+  .final-cta h2 {
+    color: black;
+  }
+
+  .final-cta h2,
+  .final-cta__description {
+    text-align: center;
   }
 }
