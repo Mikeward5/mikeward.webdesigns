@@ -415,6 +415,10 @@ body {
     gap: 0px;
   }
 
+  .testimonial-carousel__content {
+    min-width: 0;
+  }
+
   .testimonial-carousel button {
     display: none;
   }
