@@ -60,7 +60,8 @@
 .site-footer__social-links {
   width: 250px;
   height: 50px;
-  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
 }
 .site-footer__logo {
   width: 250px;

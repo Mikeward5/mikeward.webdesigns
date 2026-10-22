@@ -337,6 +337,17 @@ body {
   overflow: hidden;
 }
 
+.testimonial-carosel-control-buttons {
+  display: none;
+  text-align: center;
+}
+
+.testimonial-carosel-control-buttons button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 .testimonials-photo {
   background-image: url("../resources/daniel-romero-Z4_kN9ybLf4-unsplash.jpg");
   background-size: cover;
@@ -399,10 +410,15 @@ body {
   .testimonial-carousel {
     width: 100%;
     flex: none;
+    gap: 0px;
   }
 
   .testimonial-carousel button {
     display: none;
+  }
+
+  .testimonial-carosel-control-buttons {
+    display: block;
   }
   .process-section {
     flex-direction: column;
@@ -532,5 +548,9 @@ body {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .hero__content {
+    margin: 0 auto;
   }
 }
