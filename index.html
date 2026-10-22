@@ -21,6 +21,7 @@
       name="description"
       content="Affordable, professional web design for small businesses in the Scottish Highlands and across the UK. Fast, modern websites tailored to your business."
     />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <nav class="site-nav" aria-label="Main navigation">
@@ -29,18 +30,27 @@
         alt="MikeWard WebDesigns logo"
         class="site-logo"
       />
-
-      <ul class="site-nav__links">
-        <li>
-          <a href="./index.html" class="current" aria-current="page">Home</a>
-        </li>
-        <li><a href="./index.html">Services</a></li>
-        <li><a href="./index.html">Packages</a></li>
-        <li><a href="./index.html">About</a></li>
-        <li><a href="./index.html">Portfolio</a></li>
-        <li><a href="./index.html">Contact</a></li>
-      </ul>
-      <button class="quote-button">Get a quote</button>
+      <div class="site-nav__menu">
+        <ul class="site-nav__links">
+          <li>
+            <a href="./index.html" class="current" aria-current="page">Home</a>
+          </li>
+          <li><a href="./index.html">Services</a></li>
+          <li><a href="./index.html">Packages</a></li>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./index.html">Portfolio</a></li>
+          <li><a href="./index.html">Contact</a></li>
+        </ul>
+        <button class="quote-button">Get a quote</button>
+      </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <i class="ti ti-menu-2"></i>
+      </button>
     </nav>
 
     <header class="hero">
@@ -109,71 +119,73 @@
         </p>
         <button class="packages-intro__compare-button">Compare Packages</button>
       </div>
-      <div class="package-card">
-        <div class="package-card__icon package-card_icon_premade">
-          <i class="ti ti-files" aria-hidden="true"></i>
+      <div class="packages-cards">
+        <div class="package-card">
+          <div class="package-card__icon package-card_icon_premade">
+            <i class="ti ti-files" aria-hidden="true"></i>
+          </div>
+          <div class="package-card__heading"><h2>Pre-made</h2></div>
+          <div class="package-card__description">
+            <p>Quick, affordable and effective</p>
+          </div>
+          <div class="package-card__price">
+            <p>from <span>£600</span></p>
+          </div>
+          <div class="package-card__features">
+            <ul>
+              <li>Customisable existing design</li>
+              <li>Up to 5 pages</li>
+              <li>Responsive layout</li>
+              <li>Basic SEO &amp; performance</li>
+              <li>3 months bug fixing</li>
+            </ul>
+          </div>
+          <button class="package-card__button">Get Started</button>
         </div>
-        <div class="package-card__heading"><h2>Pre-made</h2></div>
-        <div class="package-card__description">
-          <p>Quick, affordable and effective</p>
+        <div class="package-card">
+          <div class="package-card__icon package-card_icon_professional">
+            <i class="ti ti-file-certificate" aria-hidden="true"></i>
+          </div>
+          <div class="package-card__heading"><h2>Professional</h2></div>
+          <div class="package-card__description">
+            <p>A unique design for your business</p>
+          </div>
+          <div class="package-card__price">
+            <p>from <span>£1,200</span></p>
+          </div>
+          <div class="package-card__features">
+            <ul>
+              <li>Custom design (or tailored template)</li>
+              <li>Up to 8 pages</li>
+              <li>Responsive layout</li>
+              <li>Basic SEO &amp; performance</li>
+              <li>3 months bug fixing</li>
+            </ul>
+          </div>
+          <button class="package-card__button">Get Started</button>
         </div>
-        <div class="package-card__price">
-          <p>from <span>£600</span></p>
+        <div class="package-card">
+          <div class="package-card__icon package-card_icon_bespoke">
+            <i class="ti ti-award" aria-hidden="true"></i>
+          </div>
+          <div class="package-card__heading"><h2>Bespoke</h2></div>
+          <div class="package-card__description">
+            <p>For complex or high-growth needs</p>
+          </div>
+          <div class="package-card__price">
+            <p>from <span>£2,500</span></p>
+          </div>
+          <div class="package-card__features">
+            <ul>
+              <li>Fully bespoke design &amp; build</li>
+              <li>Advanced Functionality</li>
+              <li>Integrations &amp; APIs</li>
+              <li>E-commerce / booking systems</li>
+              <li>3 months bug fixing</li>
+            </ul>
+          </div>
+          <button class="package-card__button">Get Started</button>
         </div>
-        <div class="package-card__features">
-          <ul>
-            <li>Customisable existing design</li>
-            <li>Up to 5 pages</li>
-            <li>Responsive layout</li>
-            <li>Basic SEO &amp; performance</li>
-            <li>3 months bug fixing</li>
-          </ul>
-        </div>
-        <button class="package-card__button">Get Started</button>
-      </div>
-      <div class="package-card">
-        <div class="package-card__icon package-card_icon_professional">
-          <i class="ti ti-file-certificate" aria-hidden="true"></i>
-        </div>
-        <div class="package-card__heading"><h2>Professional</h2></div>
-        <div class="package-card__description">
-          <p>A unique design for your business</p>
-        </div>
-        <div class="package-card__price">
-          <p>from <span>£1,200</span></p>
-        </div>
-        <div class="package-card__features">
-          <ul>
-            <li>Custom design (or tailored template)</li>
-            <li>Up to 8 pages</li>
-            <li>Responsive layout</li>
-            <li>Basic SEO &amp; performance</li>
-            <li>3 months bug fixing</li>
-          </ul>
-        </div>
-        <button class="package-card__button">Get Started</button>
-      </div>
-      <div class="package-card">
-        <div class="package-card__icon package-card_icon_bespoke">
-          <i class="ti ti-award" aria-hidden="true"></i>
-        </div>
-        <div class="package-card__heading"><h2>Bespoke</h2></div>
-        <div class="package-card__description">
-          <p>For complex or high-growth needs</p>
-        </div>
-        <div class="package-card__price">
-          <p>from <span>£2,500</span></p>
-        </div>
-        <div class="package-card__features">
-          <ul>
-            <li>Fully bespoke design &amp; build</li>
-            <li>Advanced Functionality</li>
-            <li>Integrations &amp; APIs</li>
-            <li>E-commerce / booking systems</li>
-            <li>3 months bug fixing</li>
-          </ul>
-        </div>
-        <button class="package-card__button">Get Started</button>
       </div>
     </section>
 
@@ -187,54 +199,56 @@
         </p>
         <button class="process-intro__learn-button">Learn More</button>
       </div>
-      <div class="process-step">
-        <div class="process-step__icon process-step__icon_consultation">
-          <i class="ti ti-brand-wechat" aria-hidden="true"></i>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step__icon process-step__icon_consultation">
+            <i class="ti ti-brand-wechat" aria-hidden="true"></i>
+          </div>
+          <div class="process-step__number"><p>01</p></div>
+          <div class="process-step__title"><p>Consultation</p></div>
+          <div class="process-step__description">
+            <p>We discuss your goals, ideas and requirements</p>
+          </div>
         </div>
-        <div class="process-step__number"><p>01</p></div>
-        <div class="process-step__title"><p>Consultation</p></div>
-        <div class="process-step__description">
-          <p>We discuss your goals, ideas and requirements</p>
+        <div class="process-step">
+          <div class="process-step__icon process-step__icon_proposal">
+            <i class="ti ti-file-invoice" aria-hidden="true"></i>
+          </div>
+          <div class="process-step__number"><p>02</p></div>
+          <div class="process-step__title"><p>Proposal</p></div>
+          <div class="process-step__description">
+            <p>You'll receive a detailed project proposal and schedule</p>
+          </div>
         </div>
-      </div>
-      <div class="process-step">
-        <div class="process-step__icon process-step__icon_proposal">
-          <i class="ti ti-file-invoice" aria-hidden="true"></i>
+        <div class="process-step">
+          <div class="process-step__icon process-step__icon_design">
+            <i class="ti ti-pencil-minus" aria-hidden="true"></i>
+          </div>
+          <div class="process-step__number"><p>03</p></div>
+          <div class="process-step__title"><p>Design &amp; Development</p></div>
+          <div class="process-step__description">
+            <p>You'll review the live staging site and share feedback</p>
+          </div>
         </div>
-        <div class="process-step__number"><p>02</p></div>
-        <div class="process-step__title"><p>Proposal</p></div>
-        <div class="process-step__description">
-          <p>You'll receive a detailed project proposal and schedule</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="process-step__icon process-step__icon_design">
-          <i class="ti ti-pencil-minus" aria-hidden="true"></i>
-        </div>
-        <div class="process-step__number"><p>03</p></div>
-        <div class="process-step__title"><p>Design &amp; Development</p></div>
-        <div class="process-step__description">
-          <p>You'll review the live staging site and share feedback</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="process-step__icon process-step__icon_launch">
-          <i class="ti ti-circle-check" aria-hidden="true"></i>
-        </div>
-        <div class="process-step__number"><p>04</p></div>
-        <div class="process-step__title"><p>Launch</p></div>
-        <div class="process-step__description">
-          <p>After final testing and payment, your website goes live</p>
+        <div class="process-step">
+          <div class="process-step__icon process-step__icon_launch">
+            <i class="ti ti-circle-check" aria-hidden="true"></i>
+          </div>
+          <div class="process-step__number"><p>04</p></div>
+          <div class="process-step__title"><p>Launch</p></div>
+          <div class="process-step__description">
+            <p>After final testing and payment, your website goes live</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="testimonials-section">
-      <div class="testimonials-intro testimonial-panel">
+      <div class="testimonials-intro">
         <p>WHAT CLIENTS SAY</p>
         <h2>Real businesses. Real results</h2>
       </div>
-      <div class="testimonial-carousel testimonial-panel">
+      <div class="testimonial-carousel">
         <button
           class="testimonial-carousel__previous"
           aria-label="Previous testimonial"
@@ -249,7 +263,7 @@
           <i class="ti ti-arrow-big-right-line" aria-hidden="true"></i>
         </button>
       </div>
-      <div class="testimonials-photo testimonial-panel"></div>
+      <div class="testimonials-photo"></div>
     </section>
 
     <section class="final-cta">
