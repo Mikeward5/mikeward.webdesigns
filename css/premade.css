@@ -298,30 +298,242 @@ main {
 }
 
 /* Responsive refinements can be expanded when the desktop design is final. */
-@media (max-width: 900px) {
+/* =========================================
+   TABLET — 601px to 900px
+   ========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  /* General section spacing */
+  .package-hero,
   .package-overview,
+  .package-inclusions,
+  .package-extras,
+  .package-process {
+    padding-inline: 32px;
+  }
+
+  .package-overview,
+  .package-inclusions,
+  .package-extras,
+  .package-process {
+    padding-block: 40px;
+  }
+
+  /* Hero */
+  .package-hero {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .package-hero__content {
+    max-width: 480px;
+    padding-block: 65px;
+  }
+
+  .package-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  /* Overview: image above text */
+  .package-overview {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .package-overview__image {
+    flex: none;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .package-overview__content {
+    flex: none;
+    width: 100%;
+  }
+
+  /* What's Included: two columns */
+  .package-inclusions__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  /* Optional Extras */
   .package-extras {
     flex-direction: column;
+    gap: 30px;
   }
-  .package-overview__image {
-    min-height: 260px;
+
+  .package-extras__content {
+    flex: none;
+    width: 100%;
   }
-  .package-extras__image {
-    min-height: 260px;
-  }
+
   .package-extras__grid {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
-  .package-extras__card {
-    flex-basis: 180px;
+
+  .package-extras__image {
+    flex: none;
+    width: 100%;
+    min-height: 300px;
   }
+
+  /* Process: two columns */
   .package-process__steps {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
-  .package-process__step {
-    flex-basis: 180px;
-  }
+
   .package-process__arrow {
     display: none;
+  }
+
+  .package-process__step {
+    min-height: 170px;
+  }
+}
+
+/* =========================================
+   MOBILE — up to 600px
+   ========================================= */
+
+@media (max-width: 600px) {
+  /* General section spacing */
+  .package-hero,
+  .package-overview,
+  .package-inclusions,
+  .package-extras,
+  .package-process {
+    padding-inline: 20px;
+  }
+
+  .package-overview,
+  .package-inclusions,
+  .package-extras,
+  .package-process {
+    padding-block: 32px;
+  }
+
+  /* Hero */
+  .package-hero {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .package-hero__content {
+    max-width: 100%;
+    padding-block: 50px;
+  }
+
+  .package-hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .package-hero__price {
+    font-size: 1.25rem;
+  }
+
+  #package-starting-price {
+    font-size: 2rem;
+  }
+
+  .package-hero__availability-notice {
+    align-items: flex-start;
+    font-size: 0.8125rem;
+  }
+
+  /* Overview: single column */
+  .package-overview {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .package-overview__image {
+    flex: none;
+    width: 100%;
+    min-height: 220px;
+  }
+
+  .package-overview__content {
+    flex: none;
+    width: 100%;
+  }
+
+  .package-overview__feature {
+    gap: 16px;
+    padding: 10px 0;
+  }
+
+  /* What's Included: single column */
+  .package-inclusions__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .package-inclusions__card {
+    min-height: 100px;
+    gap: 14px;
+  }
+
+  /* Optional Extras: single column */
+  .package-extras {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .package-extras__content {
+    flex: none;
+    width: 100%;
+  }
+
+  .package-extras__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .package-extras__card {
+    min-height: 140px;
+  }
+
+  .package-extras__image {
+    flex: none;
+    width: 100%;
+    min-height: 230px;
+  }
+
+  .package-extras__hosting-note {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+
+  /* Process: vertical steps */
+  .package-process__steps {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .package-process__step {
+    min-height: 150px;
+    justify-content: center;
+  }
+
+  .package-process__arrow {
+    display: none;
+  }
+
+  /* Shared icon sizing */
+  .feature-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .feature-icon .ti {
+    font-size: 1.625rem;
   }
 }
