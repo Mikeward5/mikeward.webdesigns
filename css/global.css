@@ -4,6 +4,7 @@
   --circle-purple: #b39ddb;
   --circle-green: #8eddb5;
   --circle-yellow: #f9de8b;
+  --bg-section-color: #f0f7ff;
 }
 
 * {
@@ -12,6 +13,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  color: #1e293b;
 }
 
 a {

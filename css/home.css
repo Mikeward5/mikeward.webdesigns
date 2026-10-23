@@ -54,11 +54,13 @@ body {
   letter-spacing: 1.5px;
   font-size: 12px;
   padding-bottom: 15px;
+  color: white;
 }
 .hero__content h1 {
   font-weight: 700;
   font-size: 40px;
   padding-bottom: 15px;
+  color: white;
 }
 .hero__consultation-button {
   background-color: var(--accent-color);
@@ -79,6 +81,7 @@ body {
 .hero__description {
   font-weight: 400;
   padding-bottom: 20px;
+  color: white;
 }
 
 /* Service benefits */
@@ -108,7 +111,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 50px clamp(20px, 5vw, 100px);
-  background-color: #f7f7f7;
+  background-color: var(--bg-section-color);
   gap: 30px;
 }
 .packages-intro {
@@ -301,7 +304,7 @@ body {
   display: flex;
   align-items: center;
   padding: 50px clamp(20px, 5vw, 100px);
-  background-color: #f7f7f7;
+  background-color: var(--bg-section-color);
   gap: 30px;
 }
 

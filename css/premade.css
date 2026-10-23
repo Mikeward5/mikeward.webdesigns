@@ -1,130 +1,327 @@
+/* Pre-made package page — shared navigation/footer styles live in template.css. */
+/* Colour tokens are inherited from global.css. */
+
 body {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-areas:
     "announcement"
     "nav"
-    "hero"
-    "overview"
-    "whats-included"
-    "optionals"
-    "process"
+    "main"
     "footer";
 }
 
-.hero {
-  grid-area: hero;
-  height: auto;
-  display: flex;
-  padding: 0 clamp(20px, 5vw, 100px);
-  align-items: center;
-  background-image: url("../resources/martin-bennie.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  color: white;
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "hero" "overview" "whats-included" "optionals" "process";
 }
 
-.hero-information {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  padding: 50px 0px;
+/* Accessible keyboard shortcut to the main content. */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  color: #1e293b;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Reusable headings and icon treatment. */
+.section-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.094rem;
+  margin-bottom: 0.625rem;
+}
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d6e9ff;
+}
+.feature-icon .ti {
+  font-size: 1.875rem;
+}
+
+/* Hero: page title, starting price and launch status. */
+.package-hero {
+  grid-area: hero;
+  display: flex;
+  align-items: center;
+  padding-inline: clamp(20px, 5vw, 100px);
+  background: url("../resources/martin-bennie.jpg") center / auto no-repeat;
+  color: #fff;
+}
+.package-hero__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding-block: 50px;
 }
-
-.hero-information h1 {
+.package-hero h1 {
+  font-size: 2.5rem;
   font-weight: 700;
-  font-size: 40px;
+  color: #fff;
 }
-
-.hero-information .eyebrow {
+.package-hero .eyebrow {
+  font-size: 0.75rem;
   letter-spacing: 1.5px;
-  font-size: 12px;
+  color: #fff;
+}
+.package-hero__description {
+  font-weight: 400;
+  color: #fff;
+}
+.package-hero__price {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+#package-starting-price {
+  padding-left: 10px;
+  font-size: 2.25rem;
+  color: #fff;
+}
+.package-hero__availability-notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.package-hero__availability-notice .ti {
+  color: #ff7070;
 }
 
-.hero-from {
-  font-size: 24px;
+/* Overview: illustration on the left, package explanation on the right. */
+.package-overview {
+  grid-area: overview;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 20px clamp(20px, 5vw, 100px);
+}
+.package-overview__image {
+  flex: 1 1 50%;
+  min-width: 0;
+  border-radius: 10px;
+  background: url("../resources/howard-bouchevereau-RSCirJ70NDM-unsplash.jpg")
+    center / cover no-repeat;
+}
+.package-overview__content {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+.package-overview h2 {
+  font-weight: 700;
+}
+.package-overview__description,
+.package-overview__feature-description {
+  font-weight: 300;
+}
+.package-overview__feature {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+.package-overview__feature-description {
+  padding-top: 5px;
+}
+.package-overview__feature .ti {
   color: var(--accent-color);
 }
 
-#hero-span {
-  font-size: 36px;
-  color: white;
-  padding-left: 10px;
-}
-.hero-description {
-  font-weight: 400;
-}
-
-.hero-closed-business {
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 12px 15px;
-  align-items: center;
-  font-size: 14px;
-  display: flex;
-  gap: 10px;
-}
-
-.hero-closed-business i {
-  color: red;
-}
-
-.overview {
-  grid-area: overview;
-  display: flex;
-  gap: 50px;
-  justify-content: space-between;
+/* Inclusions: responsive card grid with shared icon treatment. */
+.package-inclusions {
+  grid-area: whats-included;
   padding: 20px clamp(20px, 5vw, 100px);
+  background-color: var(--bg-section-color);
 }
-
-.overview-image {
-  width: 50%;
-  height: auto;
-  border-radius: 10px;
-  background-image: url("../resources/howard-bouchevereau-RSCirJ70NDM-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.overview-eyebrow {
-  letter-spacing: 1.5px;
-  font-size: 12px;
-}
-
-.overview-box h2 {
+.package-inclusions h2 {
+  padding-bottom: 10px;
   font-weight: 700;
 }
-
-.overview-box {
+.package-inclusions__description {
+  max-width: 550px;
+  font-weight: 300;
+}
+.package-inclusions__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.package-inclusions__card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 100px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.package-inclusions__card-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 50%;
 }
-
-.overview-card {
-  display: flex;
-  padding: 10px;
-  gap: 30px;
+.package-inclusions__card h3 {
+  font-size: 1rem;
+  font-weight: 600;
 }
-
-.explain {
-  padding-top: 5px;
-}
-.overview-description,
-.explain {
+.package-inclusions__card-description {
   font-weight: 300;
 }
 
-.overview-card i {
-  background-color: var(--circle-blue);
-  border-radius: 50%;
-  color: var(--accent-color);
-  width: 50px;
-  height: 50px;
+/* Extras: three flexible cards and a photographic panel. */
+.package-extras {
+  grid-area: optionals;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px clamp(20px, 5vw, 100px);
+}
+.package-extras__content {
+  flex: 1 1 60%;
+  min-width: 0;
+}
+.package-extras h2 {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.package-extras__description {
+  max-width: 550px;
+  font-weight: 300;
+}
+.package-extras__grid {
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
+}
+.package-extras__card {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  min-height: 150px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: var(--bg-section-color);
+  box-sizing: border-box;
+}
+.package-extras__card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.package-extras__card-description {
+  font-weight: 300;
+}
+.package-extras__image {
+  flex: 1 1 30%;
+  min-width: 0;
+  min-height: 250px;
+  border-radius: 10px;
+  background: url("../resources/denise-jans-p0QUpDUX8X8-unsplash.jpg") center /
+    cover no-repeat;
+}
+
+/* Four-stage process, with arrows between stages. */
+.package-process {
+  grid-area: process;
+  padding: 20px clamp(20px, 5vw, 100px);
+  background-color: var(--bg-section-color);
+}
+.package-process h2 {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.package-process__description {
+  max-width: 550px;
+  font-weight: 300;
+}
+.package-process__steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 15px;
+}
+.package-process__step {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 150px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+.package-process__step h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.package-process__step-description {
+  font-weight: 300;
+}
+.package-process__step-icon {
+  background-color: #155eef;
+  color: #fff;
+}
+.package-process__step-icon .ti {
+  color: #fff;
+}
+.package-process__arrow {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+/* Responsive refinements can be expanded when the desktop design is final. */
+@media (max-width: 900px) {
+  .package-overview,
+  .package-extras {
+    flex-direction: column;
+  }
+  .package-overview__image {
+    min-height: 260px;
+  }
+  .package-extras__image {
+    min-height: 260px;
+  }
+  .package-extras__grid {
+    flex-wrap: wrap;
+  }
+  .package-extras__card {
+    flex-basis: 180px;
+  }
+  .package-process__steps {
+    flex-wrap: wrap;
+  }
+  .package-process__step {
+    flex-basis: 180px;
+  }
+  .package-process__arrow {
+    display: none;
+  }
 }
