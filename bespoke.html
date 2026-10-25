@@ -1,41 +1,40 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Pre-made Website Package | MikeWard WebDesigns</title>
-    <link rel="canonical" href="https://mikeward-webdesigns.com/bespoke.html" />
-
+    <link href="https://mikeward-webdesigns.com/bespoke.html" rel="canonical" />
     <link rel="stylesheet" href="./css/tabler-icons.min.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/template.css" />
-    <link rel="stylesheet" href="./css/bespoke.css" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/template.css" rel="stylesheet" />
+    <link href="./css/packages.css" rel="stylesheet" />
     <link
-      rel="preload"
       as="image"
-      href="resources/martin-bennie.jpg"
       fetchpriority="high"
+      href="resources/martin-bennie.jpg"
+      rel="preload"
     />
     <meta
+      content="Explore the Pre-made Website Package from MikeWard WebDesigns. Professionally customised websites with up to five pages, responsive design and SEO foundations, from £600."
       name="description"
-      content="Affordable, professional web design for small businesses in the Scottish Highlands and across the UK. Fast, modern websites tailored to your business."
     />
-    <link rel="icon" type="image/svg+xml" href="./resources/favicon.svg" />
-    <script src="./script.js" defer></script>
+    <link href="./resources/favicon.svg" rel="icon" type="image/svg+xml" />
+    <script defer="" src="./script.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="announcement-bar">
       <p>
         🚀 MikeWard WebDesigns is launching soon! We're not currently accepting
         new projects.
       </p>
     </div>
-    <nav class="site-nav" aria-label="Main navigation">
+    <nav aria-label="Main navigation" class="site-nav">
       <img
-        src="resources/mikeward-logo.svg"
         alt="MikeWard WebDesigns logo"
         class="site-logo"
+        src="resources/mikeward-logo.svg"
       />
       <div class="site-nav__menu">
         <ul class="site-nav__links">
@@ -47,63 +46,306 @@
           <li><a href="./index.html">Portfolio</a></li>
           <li><a href="./index.html">Contact</a></li>
         </ul>
-        <button class="quote-button">Get a quote</button>
+        <button
+          aria-label="Get a quote (not yet available)"
+          class="quote-button"
+          disabled=""
+          type="button"
+        >
+          Get a quote
+        </button>
       </div>
       <button
+        aria-expanded="false"
+        aria-label="Open navigation menu"
         class="menu-toggle"
         type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
       >
-        <i class="ti ti-menu-2"></i>
+        <i aria-hidden="true" class="ti ti-menu-2"></i>
       </button>
     </nav>
-
-    <!--content Here-->
-    <section class="hero">
-      <div class="hero-information">
-        <p class="eyebrow">PRE-MADE PACKAGE</p>
-        <h1>A professional website at an affordable price</h1>
-        <p class="hero-description">
-          A cost-effective starting point, using a professionally designed
-          template tailored to your business, with your content, branding and
-          images.
-        </p>
-        <p class="hero-from">From <span id="hero-span">£600</span></p>
-        <div class="hero-closed-business">
-          <i class="ti ti-alert-square-rounded" aria-hidden="true"></i>
-          MikeWard.WebDesigns is not currently accepting new projects. This page
-          provides information about the pre-made package.
+    <main id="main-content">
+      <section aria-labelledby="package-title" class="package-hero">
+        <div class="package-hero__content">
+          <p class="eyebrow">PRE-MADE PACKAGE</p>
+          <h1 id="package-title">
+            A professional website at an affordable price
+          </h1>
+          <p class="package-hero__description">
+            A cost-effective starting point, using a professionally designed
+            template tailored to your business, with your content, branding and
+            images.
+          </p>
+          <p class="package-hero__price">
+            From <span id="package-starting-price">£600</span>
+          </p>
+          <div class="package-hero__availability-notice">
+            <i aria-hidden="true" class="ti ti-alert-square-rounded"></i>
+            MikeWard.WebDesigns is not currently accepting new projects. This
+            page provides information about the pre-made package.
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="overview"></section>
-    <section class="whats-included"></section>
-    <section class="optionals"></section>
-    <section class="process"></section>
+      </section>
+      <section aria-labelledby="overview-title" class="package-overview">
+        <div
+          aria-label="Workspace illustrating website design and planning"
+          class="package-overview__image"
+          role="img"
+        ></div>
+        <div class="package-overview__content">
+          <p class="section-eyebrow">OVERVIEW</p>
+          <h2 id="overview-title">What is the Pre-made package?</h2>
+          <p class="package-overview__description">
+            The Pre-made package uses a professionally designed website template
+            as a starting point, which I customise with your content, branding
+            and images. It's an ideal option if you need high-quality affordable
+            website without a fully bespoke design
+          </p>
+          <div class="package-overview__feature">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-stack-2"></i>
+            </div>
+            <div class="package-overview__feature-text">
+              <p>Professional template design</p>
+              <p class="package-overview__feature-description">
+                A modern, high-quality design tailored to your business
+              </p>
+            </div>
+          </div>
+          <div class="package-overview__feature">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-settings"></i>
+            </div>
+            <div class="package-overview__feature-text">
+              <p>Customised for your brand</p>
+              <p class="package-overview__feature-description">
+                Your content, colours, logo and images
+              </p>
+            </div>
+          </div>
+          <div class="package-overview__feature">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-clock"></i>
+            </div>
+            <div class="package-overview__feature-text">
+              <p>Quick and cost-effective</p>
+              <p class="package-overview__feature-description">
+                A faster, more affordable way to get online
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="inclusions-title" class="package-inclusions">
+        <p class="section-eyebrow">WHAT'S INCLUDED</p>
+        <h2 id="inclusions-title">Everything you need to get online</h2>
+        <p class="package-inclusions__description">
+          The Pre-made package includes all the essential features for a
+          professional and effective website
+        </p>
+        <div class="package-inclusions__grid">
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-files"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>Up to 5 pages</h3>
+              <p class="package-inclusions__card-description">
+                E.g Home, About, Services, Portfolio, Contact
+              </p>
+            </div>
+          </div>
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-device-mobile"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>Responsive Design</h3>
+              <p class="package-inclusions__card-description">
+                Looks great on desktop, tablet and mobile
+              </p>
+            </div>
+          </div>
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-search"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>SEO Foundations</h3>
+              <p class="package-inclusions__card-description">
+                Search-friendly structure and basic optimisation
+              </p>
+            </div>
+          </div>
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-mail"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>Contact form</h3>
+              <p class="package-inclusions__card-description">
+                A simple easy-to-use contact form
+              </p>
+            </div>
+          </div>
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-photo-minus"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>Your content and images</h3>
+              <p class="package-inclusions__card-description">
+                I'll add your text, images and branding
+              </p>
+            </div>
+          </div>
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-school"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>Basic training</h3>
+              <p class="package-inclusions__card-description">
+                Guidance on how to make simple updates
+              </p>
+            </div>
+          </div>
+          <div class="package-inclusions__card">
+            <div class="feature-icon">
+              <i aria-hidden="true" class="ti ti-tool"></i>
+            </div>
+            <div class="package-inclusions__card-content">
+              <h3>3 months of bug fixing</h3>
+              <p class="package-inclusions__card-description">
+                Support included after launch (across all packages)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="extras-title" class="package-extras">
+        <div class="package-extras__content">
+          <p class="section-eyebrow">OPTIONAL EXTRAS</p>
+          <h2 id="extras-title">Add more if you need to</h2>
+          <p class="package-extras__description">
+            These optional extras can be added to your Pre-made package if
+            required.
+          </p>
+          <div class="package-extras__grid">
+            <div class="package-extras__card">
+              <div class="package-extras__icon feature-icon">
+                <i aria-hidden="true" class="ti ti-plus"></i>
+              </div>
+              <h3>Extra Pages</h3>
+              <p class="package-extras__card-description">
+                Additional pages can be added at a per-page cost
+              </p>
+            </div>
 
-    <footer class="site-footer">
+            <div class="package-extras__card">
+              <div class="package-extras__icon feature-icon">
+                <i aria-hidden="true" class="ti ti-reload"></i>
+              </div>
+              <h3>Ongoing updates</h3>
+              <p class="package-extras__card-description">
+                New content, design changes and extra features quoted
+                individually
+              </p>
+            </div>
+            <div class="package-extras__card">
+              <div class="package-extras__icon feature-icon">
+                <i aria-hidden="true" class="ti ti-server"></i>
+              </div>
+              <h3>Optional Hosting</h3>
+              <p class="package-extras__card-description">
+                Hosting setup: £75 one-off fee. Optional hosting: £12/month.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-label="Laptop and planning notes on a desk"
+          class="package-extras__image"
+          role="img"
+        ></div>
+      </section>
+      <section aria-labelledby="process-title" class="package-process">
+        <div class="package-process__intro">
+          <p class="section-eyebrow">THE PROCESS</p>
+          <h2 id="process-title">A simple and straightforward process</h2>
+          <p class="package-process__description">
+            From initial discussion to launch, I'll guide you through each step.
+          </p>
+        </div>
+        <div class="package-process__steps">
+          <div class="package-process__step">
+            <div class="package-process__step-icon feature-icon">
+              <i aria-hidden="true" class="ti ti-number-1-small"></i>
+            </div>
+            <h3>Initial discussion</h3>
+            <p class="package-process__step-description">
+              We'll talk about your business and requirements
+            </p>
+          </div>
+          <div class="package-process__arrow">
+            <i aria-hidden="true" class="ti ti-arrow-narrow-right"></i>
+          </div>
+          <div class="package-process__step">
+            <div class="package-process__step-icon feature-icon">
+              <i aria-hidden="true" class="ti ti-number-2-small"></i>
+            </div>
+            <h3>Customise template</h3>
+            <p class="package-process__step-description">
+              I'll tailor the design with your content and branding
+            </p>
+          </div>
+          <div class="package-process__arrow">
+            <i aria-hidden="true" class="ti ti-arrow-narrow-right"></i>
+          </div>
+          <div class="package-process__step">
+            <div class="package-process__step-icon feature-icon">
+              <i aria-hidden="true" class="ti ti-number-3-small"></i>
+            </div>
+            <h3>Review and feedback</h3>
+            <p class="package-process__step-description">
+              You'll have the opportunity to review and request changes
+            </p>
+          </div>
+          <div class="package-process__arrow">
+            <i aria-hidden="true" class="ti ti-arrow-narrow-right"></i>
+          </div>
+          <div class="package-process__step">
+            <div class="package-process__step-icon feature-icon">
+              <i aria-hidden="true" class="ti ti-number-4-small"></i>
+            </div>
+            <h3>Launch your website</h3>
+            <p class="package-process__step-description">
+              Once everything's ready, I'll make your website live.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer aria-label="Site footer" class="site-footer">
       <img
-        src="resources/mikeward-logo-dark.svg"
         alt="MikeWard WebDesigns logo"
         class="site-footer__logo"
-        width="700"
         height="180"
+        src="resources/mikeward-logo-dark.svg"
+        width="700"
       />
-
       <ul class="site-footer__links">
-        <li><a href="./index.html" class="current">Home</a></li>
-        <li><a href="./index.html">Services</a></li>
-        <li><a href="./index.html">Packages</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#packages">Packages</a></li>
         <li><a href="./index.html">About</a></li>
         <li><a href="./index.html">Portfolio</a></li>
         <li><a href="./index.html">Contact</a></li>
       </ul>
-      <div class="site-footer__social-links">
-        <i class="ti ti-brand-instagram" aria-hidden="true"></i>
-        <i class="ti ti-brand-facebook" aria-hidden="true"></i>
-        <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
-        <i class="ti ti-brand-github" aria-hidden="true"></i>
+      <div aria-hidden="true" class="site-footer__social-links">
+        <i aria-hidden="true" class="ti ti-brand-instagram"></i>
+        <i aria-hidden="true" class="ti ti-brand-facebook"></i>
+        <i aria-hidden="true" class="ti ti-brand-linkedin"></i>
+        <i aria-hidden="true" class="ti ti-brand-github"></i>
       </div>
     </footer>
   </body>
