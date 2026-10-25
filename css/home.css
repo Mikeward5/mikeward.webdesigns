@@ -1,4 +1,3 @@
-/* Homepage-only grid layout */
 body {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -39,7 +38,9 @@ body {
   display: flex;
   padding: 0 clamp(20px, 5vw, 100px);
   align-items: center;
-  background-image: url("../resources/martin-bennie.jpg");
+  background-image:
+    linear-gradient(90deg, rgba(8, 27, 48, 0.8), rgba(8, 27, 48, 0.1)),
+    url("../resources/martin-bennie.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -369,38 +370,6 @@ body {
   height: 200px;
 }
 
-/* Final call to action */
-.final-cta {
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../resources/k-b-axa5jckDcg4-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px 0px;
-}
-.final-cta__eyebrow {
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-.final-cta h2 {
-  font-size: 30px;
-  padding-bottom: 15px;
-}
-.final-cta__description {
-  padding-bottom: 15px;
-  color: white;
-}
-.final-cta__button {
-  background-color: #f7f7f7;
-  border-radius: 20px;
-  color: var(--accent-color);
-  padding: 10px 20px;
-  border: 1px solid var(--accent-color);
-}
-
 /* Responsive */
 @media (max-width: 1300px) {
   .testimonials-photo {
@@ -574,19 +543,6 @@ body {
 
   .hero__portfolio-link {
     display: none;
-  }
-
-  .final-cta {
-    padding: 20px;
-  }
-
-  .final-cta h2 {
-    color: black;
-  }
-
-  .final-cta h2,
-  .final-cta__description {
-    text-align: center;
   }
 
   .button-text-desktop {

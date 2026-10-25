@@ -1,0 +1,148 @@
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "announcement"
+    "nav"
+    "hero"
+    "main"
+    "footer";
+}
+
+.hero {
+  grid-area: hero;
+}
+
+main {
+  grid-area: main;
+  min-width: 0;
+}
+
+.mike-image {
+  float: left;
+  width: 42%;
+  max-width: 460px;
+  height: auto;
+  margin: 0 35px 20px 0;
+  object-fit: cover;
+
+  -webkit-mask-image: radial-gradient(ellipse, black 60%, transparent 85%);
+
+  mask-image: radial-gradient(ellipse, black 60%, transparent 85%);
+}
+
+/* About Me */
+
+.bio {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: clamp(50px, 6vw, 90px) 0;
+  display: flow-root;
+  color: var(--text-color);
+}
+
+.bio__eyebrow {
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.bio h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.bio p:not(.bio__eyebrow) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Hero */
+.hero {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  padding: 60px clamp(20px, 6vw, 100px);
+
+  background-image:
+    linear-gradient(90deg, rgba(8, 27, 48, 0.8), rgba(8, 27, 48, 0.1)),
+    url("../resources/martin-bennie.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 540px;
+}
+
+.hero__eyebrow {
+  color: #8acaff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero__content h1 {
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero__content h1 span {
+  color: #8acaff;
+}
+
+.hero__description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .bio {
+    width: 90%;
+    padding: 50px 0;
+  }
+
+  .mike-image {
+    width: 45%;
+    margin-right: 20px;
+  }
+
+  .bio p:not(.bio__eyebrow) {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 600px) {
+  .mike-image {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px;
+  }
+
+  .bio h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    min-height: 280px;
+    padding: 45px 20px;
+  }
+}

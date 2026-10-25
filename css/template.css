@@ -98,6 +98,58 @@
 .site-footer__links a {
   color: white;
 }
+/* Final call to action */
+.final-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 60px 20px;
+
+  background-image:
+    linear-gradient(rgba(8, 27, 48, 0.8), rgba(8, 27, 48, 0.8)),
+    url("../resources/k-b-axa5jckDcg4-unsplash.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.final-cta__eyebrow {
+  color: #8acaff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.final-cta h2 {
+  color: white;
+  font-size: clamp(26px, 3vw, 36px);
+  margin-bottom: 15px;
+}
+
+.final-cta h2 span {
+  color: #8acaff;
+}
+
+.final-cta__description {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.final-cta__button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
 @media (max-width: 1200px) {
   .site-footer {
     flex-direction: column;
@@ -141,5 +193,16 @@
 @media (max-width: 1050px) {
   .site-footer {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .final-cta {
+    padding: 20px;
+  }
+
+  .final-cta h2,
+  .final-cta__description {
+    text-align: center;
   }
 }
