@@ -137,3 +137,9 @@
     visibility: visible;
   }
 }
+
+@media (max-width: 1050px) {
+  .site-footer {
+    padding: 0 20px;
+  }
+}
