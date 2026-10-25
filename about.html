@@ -35,7 +35,7 @@
         alt="MikeWard WebDesigns logo"
         class="site-logo"
       />
-      <div class="site-nav__menu">
+      <div class="site-nav__menu" id="primary-menu">
         <ul class="site-nav__links">
           <li>
             <a href="./index.html">Home</a>
@@ -54,8 +54,9 @@
         type="button"
         aria-label="Open navigation menu"
         aria-expanded="false"
+        aria-controls="primary-menu"
       >
-        <i class="ti ti-menu-2"></i>
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
       </button>
     </nav>
 
@@ -71,9 +72,9 @@
       </div>
     </header>
     <main>
-      <section class="bio">
+      <section class="bio" aria-labelledby="about-heading">
         <img
-          src=""
+          src="./resources/martin-bennie.jpg"
           alt="Mike working as a boat skipper in the Scottish Highlands"
           class="mike-image"
           width="500"
@@ -81,7 +82,7 @@
           loading="lazy"
         />
         <p class="bio__eyebrow">MY STORY</p>
-        <h2>Hi, I'm Mike.</h2>
+        <h2 id="about-heading">Hi, I'm Mike.</h2>
 
         <p>
           I'm the person behind MikeWard WebDesigns, based in the North West
@@ -118,9 +119,11 @@
           presence they're proud of.
         </p>
       </section>
-      <section class="final-cta">
+      <section class="final-cta" aria-labelledby="cta-heading">
         <p class="final-cta__eyebrow">LET'S WORK TOGETHER</p>
-        <h2>Your business deserves a website that <span>reflects it</span></h2>
+        <h2 id="cta-heading">
+          Your business deserves a website that <span>reflects it</span>
+        </h2>
         <p class="final-cta__description">
           Take a look at my website packages to see which one could be right for
           your business.
@@ -139,19 +142,30 @@
         width="700"
         height="180"
       />
-
-      <ul class="site-footer__links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html#packages">Packages</a></li>
-        <li><a href="./about.html" class="current">About</a></li>
-        <li><a href="./index.html">Portfolio</a></li>
-        <li><a href="./index.html">Contact</a></li>
-      </ul>
+      <nav aria-label="Footer navigation">
+        <ul class="site-footer__links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#packages">Packages</a></li>
+          <li>
+            <a href="./about.html" class="current" aria-current="page">About</a>
+          </li>
+          <li><a href="./index.html">Portfolio</a></li>
+          <li><a href="./index.html">Contact</a></li>
+        </ul>
+      </nav>
       <div class="site-footer__social-links">
-        <i class="ti ti-brand-instagram" aria-hidden="true"></i>
-        <i class="ti ti-brand-facebook" aria-hidden="true"></i>
-        <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
-        <i class="ti ti-brand-github" aria-hidden="true"></i>
+        <a href="YOUR_INSTAGRAM_URL" aria-label="Instagram">
+          <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="YOUR_FACEBOOK_URL" aria-label="Facebook">
+          <i class="ti ti-brand-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="YOUR_LINKEDIN_URL" aria-label="LinkedIn">
+          <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="YOUR_GITHUB_URL" aria-label="Github">
+          <i class="ti ti-brand-github" aria-hidden="true"></i>
+        </a>
       </div>
     </footer>
   </body>
