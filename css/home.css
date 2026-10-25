@@ -218,6 +218,11 @@ body {
   border: none;
 }
 
+.button-text-mobile,
+.button-text-small {
+  display: none;
+}
+
 /* How it works */
 .process-section {
   min-height: 100px;
@@ -582,5 +587,34 @@ body {
   .final-cta h2,
   .final-cta__description {
     text-align: center;
+  }
+
+  .button-text-desktop {
+    display: none;
+  }
+
+  .button-text-mobile {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .package-card__button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 349px) {
+  .button-text-mobile {
+    display: none;
+  }
+
+  .button-text-small {
+    display: inline;
   }
 }
