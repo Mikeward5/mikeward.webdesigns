@@ -18,6 +18,14 @@ main {
   grid-template-areas: "hero" "overview" "whats-included" "optionals" "process";
 }
 
+.hero__eyebrow {
+  color: #8acaff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
 /* Accessible keyboard shortcut to the main content. */
 .skip-link {
   position: absolute;
