@@ -43,7 +43,7 @@ body {
     url("../resources/martin-bennie.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   color: white;
 }
 .hero__content {
