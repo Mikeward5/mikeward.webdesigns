@@ -191,6 +191,15 @@ main {
   border-radius: 10px;
 }
 
+.contact-form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .contact-form h2 {
   font-size: clamp(24px, 2.5vw, 30px);
   font-weight: 700;

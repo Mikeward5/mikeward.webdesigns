@@ -119,7 +119,22 @@
             </div>
           </div>
         </section>
-        <form class="contact-form" id="contact-form" method="post">
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="./contact-handler.php"
+          method="post"
+        >
+          <div class="contact-form__honeypot" aria-hidden="true">
+            <label for="contact-website">Website</label>
+            <input
+              type="text"
+              id="contact-website"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
           <h2>Send me a message</h2>
 
           <p class="contact-form__description">
