@@ -1,0 +1,18 @@
+# Composer dependencies
+/vendor/
+
+# Private SMTP credentials
+/mail-config.php
+.env
+.env.*
+
+# Local development files
+.DS_Store
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
