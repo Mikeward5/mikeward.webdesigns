@@ -68,7 +68,7 @@ main {
   padding-inline: clamp(20px, 5vw, 100px);
   background-image:
     linear-gradient(90deg, rgba(8, 27, 48, 0.8), rgba(8, 27, 48, 0.1)),
-    url("../resources/martin-bennie.jpg");
+    url("../resources/martin-bennie.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
