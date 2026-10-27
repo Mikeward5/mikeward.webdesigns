@@ -18,6 +18,18 @@ main {
   min-width: 0;
 }
 
+/* About Me */
+
+.bio {
+  padding: clamp(50px, 6vw, 100px) clamp(20px, 5vw, 100px);
+}
+
+.bio__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flow-root;
+}
+
 .mike-image {
   float: left;
   width: 42%;
@@ -31,21 +43,11 @@ main {
   mask-image: radial-gradient(ellipse, black 60%, transparent 85%);
 }
 
-/* About Me */
-
-.bio {
-  width: min(1100px, 90%);
-  margin: 0 auto;
-  padding: clamp(50px, 6vw, 90px) 0;
-  display: flow-root;
-  color: var(--text-color);
-}
-
 .bio__eyebrow {
   color: var(--accent-color);
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   margin-bottom: 12px;
 }
 
@@ -56,9 +58,12 @@ main {
   margin-bottom: 24px;
 }
 
-.bio p:not(.bio__eyebrow) {
-  font-size: 16px;
-  font-weight: 400;
+.bio__content h2 {
+  margin-bottom: 24px;
+}
+
+.bio__content > p:not(.bio__eyebrow) {
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -111,18 +116,28 @@ main {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .bio {
-    width: 90%;
-    padding: 50px 0;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
+  .mike-image {
+    max-width: 500px;
+  }
+
+  .bio__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .mike-image {
     width: 45%;
     margin-right: 20px;
   }
 
-  .bio p:not(.bio__eyebrow) {
+  .bio__content > p:not(.bio__eyebrow) {
     font-size: 15px;
     line-height: 1.7;
   }

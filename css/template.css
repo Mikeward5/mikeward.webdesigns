@@ -49,10 +49,27 @@
   width: clamp(160px, 18vw, 250px);
   height: auto;
 }
-
 .menu-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
+
+.menu-toggle i {
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
 .quote-button {
   background-color: var(--accent-color);
   border-radius: 20px;
@@ -71,14 +88,29 @@
   background-color: black;
   color: white;
   align-items: center;
-  padding: 0px 100px;
+  gap: 25px;
+  padding: 30px clamp(20px, 5vw, 100px);
   flex-wrap: nowrap;
 }
 .site-footer__social-links {
-  width: 250px;
-  height: 50px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+  height: auto;
+}
+.site-footer__social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.site-footer__social-links i {
+  font-size: 24px;
+  color: white;
 }
 .site-footer__logo {
   width: 250px;
@@ -97,6 +129,16 @@
 }
 .site-footer__links a {
   color: white;
+}
+.site-nav__links a.current {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.site-footer__links a.current {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 6px;
 }
 /* Final call to action */
 .final-cta {
@@ -150,6 +192,14 @@
   font-weight: 600;
   text-decoration: none;
 }
+.final-cta__button:focus-visible,
+.quote-button:focus-visible {
+  outline: 3px solid #8acaff;
+  outline-offset: 4px;
+}
+.quote-button:hover {
+  filter: brightness(1.1);
+}
 @media (max-width: 1200px) {
   .site-footer {
     flex-direction: column;
@@ -163,7 +213,7 @@
 
 @media (max-width: 1050px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
   .site-nav__links {
     display: flex;
@@ -183,14 +233,17 @@
     transform-origin: top;
     transition: transform 0.3s ease;
     visibility: hidden;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
   .site-nav__menu.is-open {
     transform: scaleY(1);
     visibility: visible;
   }
-}
 
-@media (max-width: 1050px) {
   .site-footer {
     padding: 0 20px;
   }

@@ -14,15 +14,30 @@
   --circle-green: #8eddb5;
   --circle-yellow: #f9de8b;
   --bg-section-color: #f0f7ff;
+  --primary-color: #1e293b;
+  --text-color: #1e293b;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: #1e293b;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
 }
 
 a {
