@@ -47,7 +47,7 @@ body {
       rgba(8, 27, 48, 0.58) 55%,
       rgba(8, 27, 48, 0.18) 100%
     ),
-    url("../resources/martin-bennie.jpg");
+    url("../resources/martin-bennie.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
