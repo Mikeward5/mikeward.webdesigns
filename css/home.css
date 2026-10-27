@@ -62,7 +62,7 @@ body {
 
 .hero__eyebrow {
   margin-bottom: 16px;
-  color: #8acaff;
+  color: #e0d4ff;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -79,7 +79,7 @@ body {
 }
 
 .hero__content h1 span {
-  color: var(--accent-color);
+  color: #e0d4ff;
 }
 
 .hero__description {
@@ -277,7 +277,7 @@ body {
   background-color: var(--circle-blue);
 }
 
-.package-card__heading h2 {
+.package-card__heading h3 {
   font-size: clamp(1.2rem, 1.6vw, 1.5rem);
   line-height: 1.3;
 }
