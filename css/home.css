@@ -564,12 +564,15 @@ body {
     gap: 24px;
   }
   .process-step {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 14px;
+    display: grid;
+    grid-template-columns: 50px minmax(0, 1fr);
+    column-gap: 14px;
+    row-gap: 8px;
+    align-items: start;
   }
   .process-step__icon {
-    position: relative;
+    grid-column: 1;
+    grid-row: 1 / 4;
   }
   .process-step:not(:last-child) .process-step__icon::after {
     position: absolute;
@@ -580,6 +583,12 @@ body {
     background-color: var(--accent-color);
     content: "";
     transform: translateX(-50%);
+  }
+
+  .process-step__number,
+  .process-step__title,
+  .process-step__description {
+    grid-column: 2;
   }
 
   .testimonial-carousel__content {
